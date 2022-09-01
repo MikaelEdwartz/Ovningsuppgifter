@@ -22,9 +22,13 @@ public class OvningarEtt {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Vad är ditt namn?");
         String name = scanner.nextLine();
+
         System.out.println("Hej " + name + "!");
         System.out.println("Vänligen skriv in ett tal");
         int numInput = Integer.parseInt(scanner.nextLine());
+
+        int numInput1 = Integer.valueOf(name);
+
         System.out.println(numInput);
 
     }
