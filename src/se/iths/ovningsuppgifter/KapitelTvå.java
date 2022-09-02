@@ -111,7 +111,7 @@ public class KapitelTvå {
 
     //Uppgift 7
     private static void exercise7() {
-        //skapar en for loop som kör 16 gånger och printar ut i varje gång loppen körs (printar ut 1-16)
+        //skapar en for loop som körs 16 gånger och printar ut i varje gång loppen körs (printar ut 1-16)
         for (int i = 1; i <= 16; i++) {
             System.out.println(i);
 
@@ -163,7 +163,7 @@ public class KapitelTvå {
         //väljer ett tal som ska räknas ut kommer alltid köras tills att input är mindre än 2
         int input = 3;
         while (input > 2) {
-            // om inputen modulo 2 är lika med 0 kommer inpute delas
+            // om inputen modulo 2 är lika med 0 kommer input delas
             if (input % 2 == 0)
                 input = input / 2;
                 // om inputen modulo 2 är lika med 1 kommer inputen multipleras med 3 och adderas med 1
