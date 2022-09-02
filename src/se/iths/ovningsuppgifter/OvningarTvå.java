@@ -7,7 +7,7 @@ public class OvningarTvå {
 
     public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         //   exercise3();
         //   exercise4(scanner);
@@ -16,60 +16,47 @@ public class OvningarTvå {
         //   exercise7();
         //   exercise8();
         //   exercise9();
-        //   exercise10();
+        //   exercise10(scanner);
         //   exercise11();
 
     }
 
-    private static void exercise11() {
-        int input = 3;
-        while(input > 2){
 
-            if(input % 2 == 0){
-                input = input / 2;
-            } else{
-                input = input * 3 + 1;
-            }
+    private static void exercise3() {
+        Console c = System.console();
+        System.out.println("Hitta på ett lösenord");
+        String password = "password";
+
+        while (true) {
+            System.out.println("Skriv in ditt lösenord");
+            String input = "";
+
+            input = c.readLine();
+
+            if (input.equals(password))
+                break;
+
         }
+        System.out.println("Fel lösenord");
+
+
     }
 
-    private static void exercise10() {
-        String input = "";
-        String completeInput = "";
-        while (!input.isEmpty()) {
-            completeInput = completeInput + input;
-        }
-        System.out.println(completeInput);
-    }
 
-    private static void exercise9() {
-        int number = 65536;
-        while(number > 2){
-            number /= 2;
-        }
-    }
+    private static void exercise4(Scanner scanner) {
+        while (true) {
+            int biggerThan100 = scanner.nextInt();
 
-    private static void exercise8() {
-        for (int i = 20; i >= 2; i--) {
-            if(i % 2 == 0){
-                System.out.println(i);
-            }
-        }
-    }
-
-    private static void exercise6(Scanner scanner) {
-        int randomNumber = (int) Math.random() * 100 + 1;
-
-        while(true){
-            int input = scanner.nextInt();
-            if(input > randomNumber){
-                System.out.println("Din gissning är för hög.");
-            } else if (input < randomNumber){
-                System.out.println("Din gissning är för låg!");
-            } else{
-                System.out.println("Rätt!");
+            if (biggerThan100 > 100)
+                System.out.println("Talet är större än 100");
+            else if (biggerThan100 < 100)
+                System.out.println("Talet är mindre än 100");
+            else {
+                System.out.println("Talet är 100!");
                 break;
             }
+
+
         }
     }
 
@@ -93,42 +80,20 @@ public class OvningarTvå {
         }
     }
 
+    private static void exercise6(Scanner scanner) {
+        int randomNumber = (int) Math.random() * 100 + 1;
 
-    private static void exercise4(Scanner scanner) {
-        while(true) {
-            int biggerThan100 = scanner.nextInt();
-
-            if (biggerThan100 > 100) {
-                System.out.println("Talet är större än 100");
-            } else if (biggerThan100 < 100) {
-                System.out.println("Talet är mindre än 100");
+        while (true) {
+            int input = scanner.nextInt();
+            if (input > randomNumber) {
+                System.out.println("Din gissning är för hög.");
+            } else if (input < randomNumber) {
+                System.out.println("Din gissning är för låg!");
             } else {
-                System.out.println("Talet är 100!");
-            }
-
-
-        }
-    }
-
-    private static void exercise3() {
-        Console c = System.console();
-        System.out.println("Hitta på ett lösenord");
-        String password = "password";
-
-        while(true){
-            System.out.println("Skriv in ditt lösenord");
-            String input = "";
-
-                input = c.readLine();
-
-            if(input.equals(password))
+                System.out.println("Rätt!");
                 break;
-
+            }
         }
-        System.out.println("Fel lösenord");
-
-
-
     }
 
 
@@ -140,15 +105,62 @@ public class OvningarTvå {
 
         }
     }
+
+
+    private static void exercise8() {
+        for (int i = 20; i >= 2; i--) {
+            if (i % 2 == 0)
+                System.out.println(i);
+        }
+    }
+
+    private static void exercise9() {
+        int number = 65536;
+        while (number > 2) {
+            System.out.println(number);
+            number /= 2;
+
+        }
+    }
+
+
+    private static void exercise10(Scanner scanner) {
+        String input = "";
+        String completeInput = "";
+        while (true) {
+            System.out.println("Skriv in ett ord");
+            input = scanner.nextLine();
+
+            if (input.equals("") || input.equals("."))
+                break;
+            completeInput = completeInput + input + " ";
+        }
+        System.out.println(completeInput);
+    }
+
+
+    private static void exercise11() {
+        int input = 3;
+        while (input > 2) {
+
+            if (input % 2 == 0)
+                input = input / 2;
+            else
+                input = input * 3 + 1;
+
+            System.out.println(input);
+        }
+    }
+
 }
 
 /*¨
-*
-*
-*
-*
-*
-*
-*
-* */
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * */
 
