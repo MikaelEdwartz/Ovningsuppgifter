@@ -1,9 +1,8 @@
 package se.iths.ovningsuppgifter;
 
-import java.io.Console;
 import java.util.Scanner;
 
-public class OvningarTvå {
+public class KapitelTvå {
 
     public static void main(String[] args) {
 

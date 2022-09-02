@@ -1,10 +1,8 @@
 package se.iths.ovningsuppgifter;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
-public class OvningarEtt {
+public class KapitelEtt {
     public static void main(String[] args) {
 
         greeting();
