@@ -90,16 +90,18 @@ public class OvningarTvå {
         while (true) {
 
             int input = scanner.nextInt();
+            System.out.println("Gör en gissning!");
+
             //lägger till antalet gissningar
             numberOfGuesses++;
             //är gissningen högre än det slumpade numret printas det ut
-            if (input > randomNumber) {
+            if (input > randomNumber)
                 System.out.println("Din gissning är för hög.");
                 //är gissningen mindre än det slumpade numret printas det ut
-            } else if (input < randomNumber) {
+             else if (input < randomNumber)
                 System.out.println("Din gissning är för låg!");
                 //är gissningen inte några av de ovanstående måste det ha blivit rätt och printas ut. Samt går ut ur loopen
-            } else {
+             else {
                 System.out.println("Rätt!");
                 break;
             }
