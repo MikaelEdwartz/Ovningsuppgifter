@@ -80,6 +80,16 @@ public class KapitelFem {
 
     }
 
+    public static boolean exercise13(int i){
+        double helper = i/2;
+        double helper3 = i/3;
+        if(helper % 2 == 0 || helper3 % 3 == 0)
+            return false;
+
+        return true;
+
+    }
+
 
 
 
