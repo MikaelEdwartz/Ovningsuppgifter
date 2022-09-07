@@ -65,6 +65,21 @@ public class KapitelFem {
         return ((fahrenheit - 32)*5)/9;
     }
 
+    public static void exercise11(int i){
+        int sum = 0;
+        for (int j = 1; j <= i; j++) {
+            sum = sum + i;
+        }
+
+    }
+
+    public static void exercise12(String string){
+        for (int i = string.length()-1; i >= 0; i--) {
+            System.out.print(string.charAt(i));
+        }
+
+    }
+
 
 
 
