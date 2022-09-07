@@ -17,16 +17,16 @@ public class KapitelFyra {
     }
 
 
-    public static void exerciseOne(){
+    public static void exerciseOne() {
         //skapar en array med informationen i uppgiften
         String[] array = {"gul", "grön", "orange", "blå", "grå"};
         //enchanced for loop för att skriva ut varje värde i arrayen
-        for(String a: array){
+        for (String a : array) {
             System.out.println(a);
         }
     }
 
-    public static void exerciseTwo(){
+    public static void exerciseTwo() {
         //initialerar variabeln som ska innehålla totala summan
         int sum = 0;
         //skapar en array och lägger in värden
@@ -40,16 +40,16 @@ public class KapitelFyra {
 
     }
 
-    public static void exerciseThree(){
+    public static void exerciseThree() {
         //skapar en variabel som håller koll på antalet udda tal
         int counter = 0;
         //skapar en variabel
         int[] array = new int[5];
         //loopar igenom arrayen och fyller med random nummer
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int)(Math.random() * 100) +1;
+            array[i] = (int) (Math.random() * 100) + 1;
             //är talet udda ökar vi counter med 1
-            if(array[i] % 2 == 1)
+            if (array[i] % 2 == 1)
                 counter++;
         }
         //sorterar array
@@ -61,17 +61,17 @@ public class KapitelFyra {
 
     }
 
-    public static void exerciseFour(){
+    public static void exerciseFour() {
         Scanner scanner = new Scanner(System.in);
         //frågar efter hur stor arrayen ska vara
         int input = scanner.nextInt();
         //initialerar summan
-        double sum = 0 ;
+        double sum = 0;
         //skapar array med storlek beroende på input
         int[] array = new int[input];
         //loopar igenom array och lägger till slumpade tal
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int)(Math.random() * 100) +1;
+            array[i] = (int) (Math.random() * 100) + 1;
             //printar ut varje plats i arrayn
             System.out.println(array[i]);
             //lägger till varje värde till totalsumman
@@ -84,7 +84,7 @@ public class KapitelFyra {
 
     }
 
-    public static void exerciseFive(){
+    public static void exerciseFive() {
         sevenA();
         System.out.println("----------------------------");
         sevenB();
@@ -113,13 +113,13 @@ public class KapitelFyra {
     private static void sevenK() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(i < 2 && j % 2 == 0)
+                if (i < 2 && j % 2 == 0)
                     System.out.print("##");
-                else if(i < 2)
+                else if (i < 2)
                     System.out.print("--");
-                else if(i == 3)
+                else if (i == 3)
                     System.out.print("##");
-                else if(j < 3)
+                else if (j < 3)
                     System.out.print("WW");
                 else
                     System.out.print("~~");
@@ -134,7 +134,7 @@ public class KapitelFyra {
             for (int j = 0; j < 5; j++) {
                 if (i == 2 && j == 2)
                     System.out.print("o");
-                else if(j == i || j == helper)
+                else if (j == i || j == helper)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -149,7 +149,7 @@ public class KapitelFyra {
     private static void sevenI() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 7; j++) {
-                if(j == 2 && i != 1)
+                if (j == 2 && i != 1)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -162,9 +162,9 @@ public class KapitelFyra {
     private static void sevenH() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 7; j++) {
-                if(j == i + 2)
+                if (j == i + 2)
                     System.out.print("#");
-                else if(i < 2 && j > 4)
+                else if (i < 2 && j > 4)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -176,7 +176,7 @@ public class KapitelFyra {
     private static void sevenG() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 6; j++) {
-                if(i < 3 && j < 3)
+                if (i < 3 && j < 3)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -188,9 +188,9 @@ public class KapitelFyra {
     private static void sevenF() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                if(i % 2 == 0 && j % 2 == 0)
+                if (i % 2 == 0 && j % 2 == 0)
                     System.out.print("#");
-                else if(i % 2 == 1 && j % 2 == 1)
+                else if (i % 2 == 1 && j % 2 == 1)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -203,7 +203,7 @@ public class KapitelFyra {
         int helper = 4;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == i || j == helper)
+                if (j == i || j == helper)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -216,7 +216,7 @@ public class KapitelFyra {
     private static void sevenD() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == 2 || j == 4)
+                if (j == 2 || j == 4)
                     System.out.print("#");
                 else if (i == 2)
                     System.out.print("#");
@@ -230,7 +230,7 @@ public class KapitelFyra {
     private static void sevenA() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == i)
+                if (j == i)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -242,7 +242,7 @@ public class KapitelFyra {
     private static void sevenB() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == i || j == i +4)
+                if (j == i || j == i + 4)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -254,7 +254,7 @@ public class KapitelFyra {
     private static void sevenC() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == i || j == i + 1)
+                if (j == i || j == i + 1)
                     System.out.print("#");
                 else
                     System.out.print("-");
@@ -263,7 +263,7 @@ public class KapitelFyra {
         }
     }
 
-    public static void exerciseSix(){
+    public static void exerciseSix() {
         //skapar en array och sätter in slumpade tal
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
@@ -275,23 +275,23 @@ public class KapitelFyra {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
                 //algoritm för att sortera
-                if(array[j] < array[j + 1]){
+                if (array[j] < array[j + 1]) {
                     helper = array[j];
-                    array[j] = array[j +1];
-                    array[j+1] = helper;
+                    array[j] = array[j + 1];
+                    array[j + 1] = helper;
                 }
             }
         }
     }
 
-    public static void exerciseSeven(){
+    public static void exerciseSeven() {
         String[][] array = new String[4][8];
         //skapar en nässlad for loop som sätter in # ifall det kriteria möts annars sätts - in
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if(j == i)
+                if (j == i)
                     array[i][j] = "#";
-                else if(j == i + 4)
+                else if (j == i + 4)
                     array[i][j] = "#";
                 else
                     array[i][j] = "-";
@@ -306,45 +306,49 @@ public class KapitelFyra {
         }
     }
 
-    public static void exerciseEight(){
+    public static void exerciseEight() {
         String[][] array = new String[5][7];
-        int helper = 3;
-            while(true) {
-                Scanner scanner = new Scanner(System.in);
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 7; j++) {
+        int verticalHelper = 3;
+        int horizontalHelper = 3;
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 7; j++) {
 
-                        if (i == 0)
-                            array[i][j] = "#";
-                        else if (j == 0)
-                            array[i][j] = "#";
-                        else if (i == array.length - 1)
-                            array[i][j] = "#";
-                        else if (j == 6)
-                            array[i][j] = "#";
-                        else if(i == helper && j == helper)
-                            array[i][j] = "@";
-                        else
-                            array[i][j] = "-";
-
-                    }
+                    if (i == 0)
+                        array[i][j] = "#";
+                    else if (j == 0)
+                        array[i][j] = "#";
+                    else if (i == array.length - 1)
+                        array[i][j] = "#";
+                    else if (j == 6)
+                        array[i][j] = "#";
+                    else if (i == verticalHelper && j == horizontalHelper)
+                        array[i][j] = "@";
+                    else
+                        array[i][j] = "-";
                 }
-
-                for (int i = 0; i < 5; i++) {
-                    for (int j = 0; j < 7; j++) {
-                        System.out.print(array[i][j]);
-                    }
-                    System.out.println("");
-                }
-
-                 String input = scanner.nextLine();
-                if(input.equals("a"))
-                    helper--;
-                else if( input.equals("d"))
-                    helper++;
-
-
             }
 
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 7; j++) {
+                    System.out.print(array[i][j]);
+                }
+                System.out.println("");
+            }
+
+            String input = scanner.nextLine();
+            if (input.equals("w"))
+                verticalHelper--;
+            else if (input.equals("s"))
+                verticalHelper++;
+            else if(input.equals("a"))
+                horizontalHelper--;
+            else if(input.equals("d"))
+                horizontalHelper++;
+
+            
+
+        }
     }
 }
