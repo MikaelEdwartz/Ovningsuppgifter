@@ -1,9 +1,10 @@
 package se.iths.ovningsuppgifter;
 
+import java.util.Date;
+
 public class KapitelFem {
 
     public static void main(String[] args) {
-
     }
 
 
@@ -27,5 +28,78 @@ public class KapitelFem {
         return "Välkommen " + name + " från " + city + " med favorittal " + favouriteNumber;
     }
 
+    public static int exercise4(String string) {
+        int number = 1;
+        try {
+            number = Integer.valueOf(string);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return number;
+    }
+
+    public static String exercise5(String string) {
+        return "</p>" + string + "</p>";
+    }
+
+    // public static
+    public static void exercise6(){
+    }
+
+    public static void exercise7(String input){
+        String shortString = input.substring(0,3);
+        System.out.println(shortString);
+
+    }
+
+    public static int exercise8(String string){
+        int year = Integer.valueOf(string.substring(0,4));
+        return year;
+    }
+
+    public static void exercise9(Date dateOne, Date dateTwo){
+        System.out.println(dateOne.compareTo(dateTwo));
+    }
+
+    public static double exercise10(double fahrenheit){
+        return ((fahrenheit - 32)*5)/9;
+    }
+
+
+
+
+}
+
+enum Month {
+    Januari,
+    Februari,
+    Mars,
+    April,
+    Maj,
+    Juni,
+    Juli,
+    Augusti,
+    September,
+    Oktober,
+    November,
+    December;
+
+    public void daysInMonth(String input){
+        switch (input) {
+            case "januari" -> System.out.println(31);
+            case "februari" -> System.out.println(28);
+            case "mars" -> System.out.println(31);
+            case "april" -> System.out.println(30);
+            case "maj" -> System.out.println(31);
+            case "juni" -> System.out.println(30);
+            case "juli" -> System.out.println(31);
+            case "augusti" -> System.out.println(31);
+            case "september" -> System.out.println(30);
+            case "oktober" -> System.out.println(31);
+            case "november" -> System.out.println(30);
+            case "december" -> System.out.println(31);
+
+        }
+    }
 
 }
