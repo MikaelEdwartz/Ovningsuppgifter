@@ -5,6 +5,8 @@ import java.util.Date;
 public class KapitelFem {
 
     public static void main(String[] args) {
+        System.out.println(exercise16(5));
+
     }
 
 
@@ -43,29 +45,29 @@ public class KapitelFem {
     }
 
     // public static
-    public static void exercise6(){
+    public static void exercise6() {
     }
 
-    public static void exercise7(String input){
-        String shortString = input.substring(0,3);
+    public static void exercise7(String input) {
+        String shortString = input.substring(0, 3);
         System.out.println(shortString);
 
     }
 
-    public static int exercise8(String string){
-        int year = Integer.valueOf(string.substring(0,4));
+    public static int exercise8(String string) {
+        int year = Integer.valueOf(string.substring(0, 4));
         return year;
     }
 
-    public static void exercise9(Date dateOne, Date dateTwo){
+    public static void exercise9(Date dateOne, Date dateTwo) {
         System.out.println(dateOne.compareTo(dateTwo));
     }
 
-    public static double exercise10(double fahrenheit){
-        return ((fahrenheit - 32)*5)/9;
+    public static double exercise10(double fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
     }
 
-    public static void exercise11(int i){
+    public static void exercise11(int i) {
         int sum = 0;
         for (int j = 1; j <= i; j++) {
             sum = sum + i;
@@ -73,20 +75,56 @@ public class KapitelFem {
 
     }
 
-    public static void exercise12(String string){
-        for (int i = string.length()-1; i >= 0; i--) {
+    public static void exercise12(String string) {
+        for (int i = string.length() - 1; i >= 0; i--) {
             System.out.print(string.charAt(i));
         }
 
     }
 
-    public static boolean exercise13(int i){
-        double helper = i/2;
-        double helper3 = i/3;
-        if(helper % 2 == 0 || helper3 % 3 == 0)
-            return false;
+    public static boolean exercise13(int i) {
 
-        return true;
+
+
+        /*if(i < 10)
+            if(helper1 % 2 == 0.5 || helper1 % 2 == 1.5)
+                return true;*/
+        return false;
+
+    }
+
+    public static void exercise14(double num1, double num2) {
+        System.out.println((num1 + num2) / 2);
+    }
+
+    public static void exercise14(double num1, double num2, double num3) {
+        System.out.println((num1 + num2 + num3) / 3);
+    }
+
+    public static void exercise14(double num1, double num2, double num3, double num4) {
+        System.out.println((num1 + num2 + num3 + num4) / 4);
+    }
+
+    public static void exercise14(double num1, double num2, double num3, double num4, double num5) {
+        System.out.println((num1 + num2 + num3 + num4 + num5) / 5);
+    }
+
+
+    public static int exercise15(int i){
+        int sum = 1;
+        for (int j = 1; j <= i; j++) {
+            sum = sum * i;
+        }
+        return sum;
+    }
+    public static int exercise16(int i){
+            if(i != 0)
+                return i * exercise16(i-1);
+            else
+                return 1;
+    }
+
+    public static void exercise17(){
 
     }
 
@@ -94,6 +132,25 @@ public class KapitelFem {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 enum Month {
     Januari,
@@ -109,7 +166,7 @@ enum Month {
     November,
     December;
 
-    public void daysInMonth(String input){
+    public void daysInMonth(String input) {
         switch (input) {
             case "januari" -> System.out.println(31);
             case "februari" -> System.out.println(28);
