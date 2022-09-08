@@ -5,7 +5,7 @@ import java.util.Date;
 public class KapitelFem {
 
     public static void main(String[] args) {
-        System.out.println(exercise16(5));
+        System.out.println(exercise17(10));
 
     }
 
@@ -110,46 +110,35 @@ public class KapitelFem {
     }
 
 
-    public static int exercise15(int i){
+    public static int exercise15(int i) {
         int sum = 1;
         for (int j = 1; j <= i; j++) {
             sum = sum * i;
         }
         return sum;
     }
-    public static int exercise16(int i){
-            if(i != 0)
-                return i * exercise16(i-1);
-            else
-                return 1;
+
+    public static int exercise16(int i) {
+        if (i != 0)
+            return i * exercise16(i - 1);
+        else
+            return 1;
     }
 
-    public static void exercise17(){
+    public static int exercise17(int i) {
+        int j = 0;
+        if (j < i) {
+            j++;
+            return  exercise17(j) + exercise17(j + 1);
+        } else {
+            return 1;
+        }
+
 
     }
-
-
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 enum Month {
