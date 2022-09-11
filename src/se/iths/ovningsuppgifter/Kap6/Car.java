@@ -7,6 +7,14 @@ public class Car {
     private String color;
     private BigDecimal price;
 
+    public Car(){
+
+    }
+    public Car(String brand, String color, BigDecimal price){
+        this.brand = brand;
+        this.color = color;
+        this.price = price;
+    }
     public String getBrand() {
         return this.brand;
     }
