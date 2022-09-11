@@ -5,7 +5,6 @@ import java.util.Date;
 public class KapitelFem {
 
     public static void main(String[] args) {
-        System.out.println(exercise17(10));
 
     }
 

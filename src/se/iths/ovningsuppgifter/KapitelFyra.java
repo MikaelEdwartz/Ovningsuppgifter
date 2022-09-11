@@ -13,7 +13,8 @@ public class KapitelFyra {
         //exerciseFive();
         //exerciseSix();
         //exerciseSeven();
-        exerciseEight();
+        //exerciseEight();
+        sevenK();
     }
 
 
@@ -113,12 +114,10 @@ public class KapitelFyra {
     private static void sevenK() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
-                if (i < 2 && j % 2 == 0)
+                if (i < 2 && j % 2 == 0 || i == 3)
                     System.out.print("##");
                 else if (i < 2)
                     System.out.print("--");
-                else if (i == 3)
-                    System.out.print("##");
                 else if (j < 3)
                     System.out.print("WW");
                 else
@@ -263,7 +262,7 @@ public class KapitelFyra {
         }
     }
 
-    public static void exerciseSix() {
+    public static void exerciseSix(){
         //skapar en array och sätter in slumpade tal
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
@@ -315,13 +314,7 @@ public class KapitelFyra {
             for (int i = 0; i < 5; i++) {
                 for (int j = 0; j < 7; j++) {
 
-                    if (i == 0)
-                        array[i][j] = "#";
-                    else if (j == 0)
-                        array[i][j] = "#";
-                    else if (i == array.length - 1)
-                        array[i][j] = "#";
-                    else if (j == 6)
+                    if (i == 0||j == 0 || i == array.length - 1 || j == 6 )
                         array[i][j] = "#";
                     else if (i == verticalHelper && j == horizontalHelper)
                         array[i][j] = "@";
@@ -347,7 +340,7 @@ public class KapitelFyra {
             else if(input.equals("d"))
                 horizontalHelper++;
 
-            
+
 
         }
     }
