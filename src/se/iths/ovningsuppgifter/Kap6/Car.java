@@ -5,12 +5,12 @@ import java.math.BigDecimal;
 public class Car {
     private String brand;
     private String color;
-    private BigDecimal price;
+    private int price;
 
     public Car(){
 
     }
-    public Car(String brand, String color, BigDecimal price){
+    public Car(String brand, String color, int price){
         this.brand = brand;
         this.color = color;
         this.price = price;
@@ -31,11 +31,16 @@ public class Car {
         return this.color;
     }
 
-    public void setPrice(BigDecimal price) {
+    public int getPrice() {
+        return price;
+
+    }
+
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public int halfPrice(){
+        return this.price/2;
     }
 }

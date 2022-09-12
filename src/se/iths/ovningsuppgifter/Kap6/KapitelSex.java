@@ -6,6 +6,9 @@ public class KapitelSex {
 
         Animal katt = new Animal("Katt", "Kalle", 1);
         Animal hund = new Animal("Hund", "Berra", 3);
+
+        Car car = new Car("Toyota", "red", 1000);
+
     }
 
 
