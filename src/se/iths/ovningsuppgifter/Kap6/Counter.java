@@ -16,6 +16,7 @@ public class Counter {
     public void decrease(){
         this.count--;
     }
+
     public String toString(){
         return "Värdet är " + this.count + " och det har skapats " + this.counterObjects + " st objekt.";
     }

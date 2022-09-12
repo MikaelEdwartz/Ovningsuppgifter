@@ -9,6 +9,12 @@ public class KapitelSex {
 
         Car car = new Car("Toyota", "red", 1000);
 
+        Pancakes pannakaka = new Pancakes();
+
+
+        while(pannakaka.canMakePancakes())
+            pannakaka.makePancakes();
+
     }
 
 
