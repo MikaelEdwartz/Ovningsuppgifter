@@ -40,7 +40,7 @@ public class Car {
         this.price = price;
     }
 
-    public int halfPrice(){
-        return this.price/2;
+    public void halfPrice(){
+        this.price /= 2;
     }
 }
