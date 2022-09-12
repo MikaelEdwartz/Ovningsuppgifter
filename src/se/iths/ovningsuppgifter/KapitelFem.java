@@ -5,7 +5,10 @@ import java.util.Date;
 public class KapitelFem {
 
     public static void main(String[] args) {
-
+        for (int i = 0; i < 200; i++) {
+            if(exercise13(i))
+                System.out.println(i + " är ett primtal");
+        }
     }
 
 
@@ -84,12 +87,24 @@ public class KapitelFem {
     public static boolean exercise13(int i) {
 
 
+        double helper2 = (double) i / 2;
+        double helper3 = (double) i / 3;
+        double helper5 = (double) i / 5;
+        double helper7 = (double) i / 7;
+        double helper11 = (double) i / 11;
 
-        /*if(i < 10)
-            if(helper1 % 2 == 0.5 || helper1 % 2 == 1.5)
-                return true;*/
-        return false;
+        if(i/2 == helper2)
+            return false;
+        else if(i / 3 == helper3)
+            return false;
+        else if(i / 5 == helper5)
+            return false;
+        else if(i / 7 == helper7)
+            return false;
+        else if(i / 11 == helper11)
+            return false;
 
+        return true;
     }
 
     public static void exercise14(double num1, double num2) {
@@ -128,7 +143,7 @@ public class KapitelFem {
         int j = 0;
         if (j < i) {
             j++;
-            return  exercise17(j) + exercise17(j + 1);
+            return exercise17(j) + exercise17(j + 1);
         } else {
             return 1;
         }
