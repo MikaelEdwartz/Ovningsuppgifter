@@ -8,13 +8,19 @@ public class LongestPalindrome {
 
     public static String findLongestPaldindrome(String word) {
         String longestPalindrome = "";
-        int helper = word.length() / 2 + 1;
+        String letterHelper = "";
+        int helper = word.length() / 2;
 
-        for (int i = word.length() / 2 -1; i < word.length() - 1; i++) {
-            if ((word.charAt(i) == (word.charAt(helper))))
-                longestPalindrome = word.charAt(i) + longestPalindrome + word.charAt(helper);
+        for (int i = word.length() / 2; i < word.length(); i++) {
+            if ((word.charAt(i) == (word.charAt(helper)))) {
 
-
+                if (longestPalindrome.isEmpty()) {
+                    longestPalindrome = String.valueOf(word.charAt(helper));
+                } else {
+                    longestPalindrome = longestPalindrome.concat(String.valueOf(word.charAt(helper)));
+                    longestPalindrome.
+                }
+            }
             helper--;
 
         }
