@@ -6,20 +6,19 @@ public class LongestPalindrome {
         System.out.println(findLongestPaldindrome("abcba"));
     }
 
-    public static String findLongestPaldindrome(String word){
-                 String longestPalindrome = "";
-        int helper = word.length();
+    public static String findLongestPaldindrome(String word) {
+        String longestPalindrome = "";
+        int helper = word.length() / 2 + 1;
 
-        for (int i = 0; i < word.length() -1; i++) {
-                if((word.charAt(i) == (word.charAt(helper-1))))
-                    longestPalindrome =  word.charAt(helper-1) + longestPalindrome + word.charAt(i);
+        for (int i = word.length() / 2 -1; i < word.length() - 1; i++) {
+            if ((word.charAt(i) == (word.charAt(helper))))
+                longestPalindrome = word.charAt(i) + longestPalindrome + word.charAt(helper);
 
 
-                helper--;
+            helper--;
 
         }
+
         return longestPalindrome;
-
     }
-
 }
