@@ -35,10 +35,9 @@ public class Point {
     }
 
     public double distanceTo(Point other) {
-        double distance;
-        int xSqrt = (this.x - other.x) * (this.x - other.x);
-        int ySqrt = (this.y - other.y) * (this.y - other.y);
-        distance = Math.sqrt((xSqrt + ySqrt));
-        return distance;
+        int xSqrd = (this.x - other.x) * (this.x - other.x);
+        int ySqrd = (this.y - other.y) * (this.y - other.y);
+
+        return Math.sqrt((xSqrd + ySqrd));
     }
 }
