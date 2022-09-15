@@ -7,6 +7,8 @@ public class LongestPalindrome {
     }
 
     public static String findLongestPaldindrome(String word) {
+
+
         String longestPalindrome = "";
         String letterHelper = "";
         int helper = word.length() / 2;
@@ -26,6 +28,8 @@ public class LongestPalindrome {
 
         }
 
+
         return longestPalindrome;
     }
 }
+

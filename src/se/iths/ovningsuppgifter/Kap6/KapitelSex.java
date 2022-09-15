@@ -8,13 +8,14 @@ public class KapitelSex {
         Animal hund = new Animal("Hund", "Berra", 3);
 
         Car car = new Car("Toyota", "red", 1000);
-         /*   Car bil = new Car("Toyota", "röd", 1000);
-            System.out.println(bil.getPrice());
-            bil.setPrice(15000);
-        System.out.println(bil.getPrice());
-        */
 
         Pancakes pannakaka = new Pancakes();
+
+        Semaphore a = Semaphore.request();
+        Semaphore b = Semaphore.request();
+        Semaphore c = Semaphore.request();
+        Semaphore d = Semaphore.request();
+        Semaphore e = Semaphore.request();
 
         while(pannakaka.canMakePancakes())
             pannakaka.makePancakes();

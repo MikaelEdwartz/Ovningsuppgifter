@@ -1,25 +1,36 @@
 package se.iths.ovningsuppgifter.Kap6;
 
+import java.lang.management.GarbageCollectorMXBean;
+
 public class Semaphore {
-    private int maxNumberOfObjects = 5;
+    private static int maxNumberOfObjects = 5;
 
     private Semaphore(){
 
-        this.maxNumberOfObjects--;
+        maxNumberOfObjects--;
     }
 
-    public Semaphore request(){
-        if(this.maxNumberOfObjects > 0) {
+    public static Semaphore request(){
+        if(0 < maxNumberOfObjects) {
+
             return new Semaphore();
 
         }
         return null;
     }
 
-    public Semaphore release(){
+    public void release(){
 
+        maxNumberOfObjects++;
+        this.setNull();
+    }
+
+    public Semaphore setNull(){
         return null;
+    }
 
+    public String toString(){
+        return toString();
     }
 
 
