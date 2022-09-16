@@ -4,17 +4,15 @@ import java.lang.management.GarbageCollectorMXBean;
 
 public class Semaphore {
     private static int maxNumberOfObjects = 5;
+    private static String number;
 
     private Semaphore(){
-
-        maxNumberOfObjects--;
+        this.number = "Ett objekt";
     }
 
     public static Semaphore request(){
         if(0 < maxNumberOfObjects) {
-
             return new Semaphore();
-
         }
         return null;
     }
@@ -22,15 +20,15 @@ public class Semaphore {
     public void release(){
 
         maxNumberOfObjects++;
-        this.setNull();
+        setNull();
     }
 
-    public Semaphore setNull(){
-        return null;
+    public void setNull(){
+        this.number = null;
     }
 
     public String toString(){
-        return toString();
+        return this.number;
     }
 
 

@@ -1,5 +1,7 @@
 package se.iths.ovningsuppgifter.Kap6;
 
+import java.util.Arrays;
+
 public class KapitelSex {
 
     public static void main(String[] args) {
@@ -17,6 +19,16 @@ public class KapitelSex {
         Semaphore d = Semaphore.request();
         Semaphore e = Semaphore.request();
 
+        for (Semaphore semaphore1 : Arrays.asList(a, b, c, d, e)) {
+            System.out.println(semaphore1.toString());
+        }
+        System.out.println("__________");
+
+        e.release();
+        System.out.println(a);
+        for (Semaphore semaphore : Arrays.asList(b, c, d, e)) {
+            System.out.println(semaphore.toString());
+        }
         while(pannakaka.canMakePancakes())
             pannakaka.makePancakes();
 
