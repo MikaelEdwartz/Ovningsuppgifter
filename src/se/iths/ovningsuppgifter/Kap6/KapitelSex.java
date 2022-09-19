@@ -18,17 +18,39 @@ public class KapitelSex {
         Semaphore c = Semaphore.request();
         Semaphore d = Semaphore.request();
         Semaphore e = Semaphore.request();
+        Semaphore f = Semaphore.request();
+        Semaphore g = Semaphore.request();
 
         for (Semaphore semaphore1 : Arrays.asList(a, b, c, d, e)) {
             System.out.println(semaphore1.toString());
         }
         System.out.println("__________");
-
-        e.release();
         System.out.println(a);
-        for (Semaphore semaphore : Arrays.asList(b, c, d, e)) {
-            System.out.println(semaphore.toString());
-        }
+        System.out.println(b.toString());
+        System.out.println(c.toString());
+        System.out.println(d.toString());
+        System.out.println(e.toString());
+        System.out.println(f);
+        System.out.println(g);
+        e.release();
+        System.out.println("__________");
+        System.out.println(a);
+        System.out.println(b.toString());
+        System.out.println(c.toString());
+        System.out.println(d.toString());
+        System.out.println(e.toString());
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println("__________");
+        c.release();
+        System.out.println(a);
+        System.out.println(b.toString());
+        System.out.println(c.toString());
+        System.out.println(d.toString());
+        System.out.println(e.toString());
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println("__________");
         while(pannakaka.canMakePancakes())
             pannakaka.makePancakes();
 
