@@ -5,12 +5,22 @@ public class Person {
     private String work;
     private int age;
     private double money;
+    private boolean hasVehicle;
+
 
     public Person(String name, String work, int age, double money){
         this.name = name;
         this.work = work;
         this.age = age;
         this.money = money;
+    }
+
+    public boolean checkIfVehicle(){
+        return hasVehicle;
+    }
+
+    public void setHasVehicle(boolean hasVehicle) {
+        this.hasVehicle = hasVehicle;
     }
 
     public String getName() {

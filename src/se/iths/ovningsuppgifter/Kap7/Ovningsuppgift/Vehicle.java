@@ -9,6 +9,9 @@ public class Vehicle {
         this.weight = weight;
         this.price = price;
         this.person = person;
+        this.person.setHasVehicle(true);
+
+
     }
 
     public Person getPerson() {
