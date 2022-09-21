@@ -1,6 +1,8 @@
 package se.iths.ovningsuppgifter.Kap7.Animals;
 
-public class Cat extends Mammal{
+import se.iths.ovningsuppgifter.Kap7.Interface.NoiseMaker;
+
+public class Cat extends Mammal implements NoiseMaker {
 
     public Cat() {
 
@@ -10,6 +12,11 @@ public class Cat extends Mammal{
     public void speak() {
         System.out.println("mjau");
         super.speak();
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Mjau");
     }
 }
 
