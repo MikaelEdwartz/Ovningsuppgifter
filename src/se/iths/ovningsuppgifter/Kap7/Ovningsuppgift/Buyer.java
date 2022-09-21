@@ -4,6 +4,7 @@ public class Buyer extends Person {
 
     public Buyer(String name, String work, int age, double money) {
         super(name, work, age, money);
+        this.setHasVehicle(false);
 
 
     }

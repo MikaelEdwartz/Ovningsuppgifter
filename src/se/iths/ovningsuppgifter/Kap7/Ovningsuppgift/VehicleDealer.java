@@ -9,7 +9,7 @@ public class VehicleDealer extends Person{
     }
 
 
-    public String changeOwner(Vehicle vehicle, Person seller, Person buyer, Person dealer){
+    public String changeOwner(Vehicle vehicle, Person seller, Person buyer){
         if(!(gotMoney(vehicle, buyer)))
             return "Buyer cannot afford vehicle";
 
@@ -18,8 +18,9 @@ public class VehicleDealer extends Person{
 
         vehicle.setPerson(buyer);
         seller.setMoney(vehicle.getPrice()-getDealersCut(vehicle));
-        dealer.setMoney(getDealersCut(vehicle));
+        this.setMoney(getDealersCut(vehicle));
 
+        buyer.setHasVehicle(true);
         return "Vehicle changed hands";
 
     }
