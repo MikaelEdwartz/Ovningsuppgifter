@@ -14,14 +14,12 @@ public class KapitelSju {
         cat.speak();
         System.out.println(cat);
 
-        Vehicle vehicle = new Vehicle();
         Boat boat = new Boat();
         Car car = new Car();
         Motorboat mBoat = new Motorboat();
         Sail sail = new Sail();
         Bicycle bicycle = new Bicycle();
 
-        vehicle.goTo("Årstad");
         boat.goTo("Slöinge");
         car.goTo("Åstorp");
         mBoat.goTo("Kortedala");

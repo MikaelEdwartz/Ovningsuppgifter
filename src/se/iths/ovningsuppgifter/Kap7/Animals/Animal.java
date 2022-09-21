@@ -1,6 +1,6 @@
 package se.iths.ovningsuppgifter.Kap7.Animals;
 
-public class Animal {
+public abstract class Animal {
 
     public void speak(){
         System.out.println("sound");

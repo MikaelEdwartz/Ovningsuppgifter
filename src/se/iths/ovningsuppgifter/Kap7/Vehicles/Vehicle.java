@@ -1,6 +1,6 @@
 package se.iths.ovningsuppgifter.Kap7.Vehicles;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     public Vehicle(){
 
