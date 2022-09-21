@@ -1,4 +1,4 @@
-package se.iths.ovningsuppgifter;
+package se.iths.ovningsuppgifter.Kap5;
 
 import java.util.Date;
 

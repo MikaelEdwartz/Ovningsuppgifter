@@ -1,4 +1,4 @@
-package se.iths.ovningsuppgifter;
+package se.iths.ovningsuppgifter.Kap1;
 
 import java.util.Scanner;
 

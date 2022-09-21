@@ -1,4 +1,4 @@
-package se.iths.ovningsuppgifter;
+package se.iths.random;
 
 public class Point {
     private int x;

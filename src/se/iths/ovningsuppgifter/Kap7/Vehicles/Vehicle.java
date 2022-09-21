@@ -9,6 +9,8 @@ public class Vehicle {
 
         System.out.println("Färdas till " + dest);
     }
+    
+
 
 
 
