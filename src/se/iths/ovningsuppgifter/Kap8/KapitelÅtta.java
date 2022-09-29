@@ -5,16 +5,21 @@ import java.util.ArrayList;
 public class KapitelÅtta {
     public static void main(String[] args) {
 
-        Safe s = new Safe();
-        s.store(5);
+                Stack stack = new Stack();
 
-        System.out.println("_______");
-        s.print();
+        int num1 = 1;
+        int num2 = 2;
+        int num3 = 3;
 
-        System.out.println("________");
-        s.retrieve();
+        stack.push(3);
+        stack.push(2);
+        stack.push(5);
+        stack.push(8);
 
-        excersice2();
+
+        stack.showChronological();
+        System.out.println("__________");
+        stack.showbackwards();
 
     }
 
